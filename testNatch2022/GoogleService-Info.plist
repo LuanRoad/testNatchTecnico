@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>209166783175-7j4rnvsovm676bvmescp5gvqps5b1v0r.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.209166783175-7j4rnvsovm676bvmescp5gvqps5b1v0r</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBQSMhPQvmBiHKXP--BpboHVjPPocovti8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>209166783175</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.luanroad.TestNach2022</string>
+	<key>PROJECT_ID</key>
+	<string>testnach2022</string>
+	<key>STORAGE_BUCKET</key>
+	<string>testnach2022.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:209166783175:ios:0ad61f6edd84c7211264e2</string>
+</dict>
+</plist>

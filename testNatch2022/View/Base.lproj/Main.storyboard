@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testNatch2022" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="520-y3-QRr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="520-y3-QRr" secondAttribute="trailing" id="280-vD-Rjk"/>
+                            <constraint firstItem="520-y3-QRr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LI4-Yi-wdg"/>
+                            <constraint firstItem="520-y3-QRr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T1O-nA-L7a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="520-y3-QRr" secondAttribute="bottom" id="k64-6n-ZBw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="exampleTable" destination="520-y3-QRr" id="TAU-I7-NvJ"/>
+                        <segue destination="btS-aE-lTi" kind="show" identifier="chartSegue" id="2j4-LM-Gv1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="70"/>
+        </scene>
+        <!--Chart View Controller-->
+        <scene sceneID="cJJ-0r-6Ld">
+            <objects>
+                <viewController id="btS-aE-lTi" customClass="ChartViewController" customModule="testNatch2022" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9MT-vc-Qze">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="989-Hw-dgS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="J49-Tw-Whd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="989-Hw-dgS" firstAttribute="top" secondItem="J49-Tw-Whd" secondAttribute="top" id="NEZ-AL-jy2"/>
+                            <constraint firstItem="J49-Tw-Whd" firstAttribute="bottom" secondItem="989-Hw-dgS" secondAttribute="bottom" id="Tli-9H-VhN"/>
+                            <constraint firstItem="J49-Tw-Whd" firstAttribute="trailing" secondItem="989-Hw-dgS" secondAttribute="trailing" id="tli-uH-Qec"/>
+                            <constraint firstItem="989-Hw-dgS" firstAttribute="leading" secondItem="J49-Tw-Whd" secondAttribute="leading" id="wjT-RM-ehd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xoT-h6-qa7"/>
+                    <connections>
+                        <outlet property="chartTable" destination="989-Hw-dgS" id="IPG-HX-orj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EIs-oC-FdO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
